@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/joeldenning/simple-single-spa-webpack-example#readme",
   "devDependencies": {
+    "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-preset-env": "^1.6.0",
