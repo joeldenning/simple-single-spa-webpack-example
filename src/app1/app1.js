@@ -10,16 +10,16 @@ const reactLifecycles = singleSpaReact({
 	domElementGetter,
 });
 
-export function bootstrap() {
-	return reactLifecycles.bootstrap();
+export function bootstrap(props) {
+	return reactLifecycles.bootstrap(props);
 }
 
-export function mount() {
-	return reactLifecycles.mount();
+export function mount(props) {
+	return reactLifecycles.mount(props);
 }
 
-export function unmount() {
-	return reactLifecycles.unmount();
+export function unmount(props) {
+	return reactLifecycles.unmount(props);
 }
 
 function domElementGetter() {

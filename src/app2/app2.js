@@ -3,24 +3,26 @@ import 'reflect-metadata';
 import singleSpaAngular from 'single-spa-angular2';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import mainModule from './main-module.ts';
+import {Router} from '@angular/router';
 
 const ngLifecycles = singleSpaAngular({
 	domElementGetter,
 	mainModule,
 	angularPlatform: platformBrowserDynamic(),
 	template: `<app2 />`,
+	Router,
 })
 
-export function bootstrap() {
-	return ngLifecycles.bootstrap();
+export function bootstrap(props) {
+	return ngLifecycles.bootstrap(props);
 }
 
-export function mount() {
-	return ngLifecycles.mount();
+export function mount(props) {
+	return ngLifecycles.mount(props);
 }
 
-export function unmount() {
-	return ngLifecycles.unmount();
+export function unmount(props) {
+	return ngLifecycles.unmount(props);
 }
 
 function domElementGetter() {
