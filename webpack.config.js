@@ -20,6 +20,9 @@ module.exports = {
 			},
 		],
 	},
+	node: {
+		fs: 'empty'
+	},
 	resolve: {
 		modules: [
 			__dirname,
