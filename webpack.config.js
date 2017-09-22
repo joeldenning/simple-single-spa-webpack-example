@@ -1,10 +1,19 @@
 const path = require('path');
+const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
-	entry: 'src/root-application/root-application.js',
+	entry: {
+		'root-application': 'src/root-application/root-application.js',
+		'common-dependencies': [
+			'@angular/core',
+			'@angular/platform-browser-dynamic',
+			'reflect-metadata',
+		],
+	},
 	output: {
 		publicPath: '/dist/',
-		filename: 'root-application.js',
+		filename: '[name].js',
 		path: path.resolve(__dirname, 'dist'),
 	},
 	module: {
@@ -30,6 +39,10 @@ module.exports = {
 		],
 	},
 	plugins: [
+		new CleanWebpackPlugin(['dist']),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'common-dependencies',
+		}),
 	],
 	devtool: 'source-map',
 	externals: [
