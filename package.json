@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "A simple example of how to use webpack with single-spa",
   "scripts": {
-    "watch": "webpack --config webpack.config.js -w",
-    "build": "webpack --config webpack.config.js -p",
-    "start": "http-server . -p 9090 -c 1"
+    "watch": "webpack-dev-server --port 9090",
+    "build": "webpack --config webpack.config.js -p"
   },
   "repository": {
     "type": "git",
@@ -27,7 +26,8 @@
     "http-server": "^0.10.0",
     "ts-loader": "^2.3.2",
     "typescript": "^2.4.2",
-    "webpack": "^3.4.1"
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.8.2"
   },
   "dependencies": {
     "@angular/common": "^4.3.3",
