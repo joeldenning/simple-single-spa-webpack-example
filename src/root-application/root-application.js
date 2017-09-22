@@ -2,6 +2,7 @@ import * as singleSpa from 'single-spa';
 
 singleSpa.declareChildApplication('app-1', () => import('../app1/app1.js'), hashPrefix('/app1'));
 singleSpa.declareChildApplication('app-2', () => import('../app2/app2.js'), hashPrefix('/app2'));
+singleSpa.declareChildApplication('app-3', () => import('../app3/app3.js'), hashPrefix('/app3'));
 
 singleSpa.start();
 

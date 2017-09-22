@@ -36,6 +36,10 @@ module.exports = {
 				test: /\.tsx?$/,
 				loader: 'ts-loader',
 			},
+			{
+				test: /\.html$/,
+				loader: 'html-loader',
+			},
 		],
 	},
 	node: {

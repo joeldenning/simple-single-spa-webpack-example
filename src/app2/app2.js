@@ -27,10 +27,10 @@ export function unmount(props) {
 
 function domElementGetter() {
 	// Make sure there is a div for us to render into
-	let el = document.getElementById('app1');
+	let el = document.getElementById('app2');
 	if (!el) {
 		el = document.createElement('div');
-		el.id = 'app1';
+		el.id = 'app2';
 		document.body.appendChild(el);
 	}
 
