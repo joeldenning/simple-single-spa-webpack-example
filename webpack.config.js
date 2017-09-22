@@ -1,10 +1,28 @@
 const path = require('path');
+const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
-	entry: 'src/root-application/root-application.js',
+	entry: {
+		'root-application': 'src/root-application/root-application.js',
+		'common-dependencies': [
+			// We want just one version of angular, so we put it into the common dependencies
+			'@angular/common',
+			'@angular/compiler',
+			'@angular/core',
+			'@angular/platform-browser-dynamic',
+			'@angular/router',
+			'reflect-metadata',
+			/* Just one version of react, too. react-router is fine to have multiple versions of,
+			 * though, so no need to put it in common dependencies
+			 */
+			'react',
+			'react-dom',
+		],
+	},
 	output: {
 		publicPath: '/dist/',
-		filename: 'root-application.js',
+		filename: '[name].js',
 		path: path.resolve(__dirname, 'dist'),
 	},
 	module: {
@@ -20,6 +38,9 @@ module.exports = {
 			},
 		],
 	},
+	node: {
+		fs: 'empty'
+	},
 	resolve: {
 		modules: [
 			__dirname,
@@ -27,6 +48,10 @@ module.exports = {
 		],
 	},
 	plugins: [
+		new CleanWebpackPlugin(['dist']),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'common-dependencies',
+		}),
 	],
 	devtool: 'source-map',
 	externals: [
