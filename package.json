@@ -4,8 +4,7 @@
   "description": "A simple example of how to use webpack with single-spa",
   "scripts": {
     "watch": "webpack --config webpack.config.js -w",
-    "build": "webpack --config webpack.config.js -p && npm run build-children",
-    "build-children": "cd ./src/app2 && webpack && cd ../app3 && webpack && cd ../..",
+    "build": "webpack --config webpack.config.js -p",
     "start": "http-server . -p 9090 -c 1"
   },
   "repository": {
