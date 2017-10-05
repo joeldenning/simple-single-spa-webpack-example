@@ -1,7 +1,9 @@
 {
 	"compilerOptions": {
 		"sourceMap": true,
-	  "target": "es5",
+		"target": "es5",
+		"module": "commonjs",
+    "moduleResolution": "node",
 		"lib": ["es5", "es6", "dom"],
     "experimentalDecorators": true
 	}
