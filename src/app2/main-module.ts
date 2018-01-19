@@ -23,9 +23,7 @@ enableProdMode();
 @NgModule({
 	imports: [
 		BrowserModule,
-		RouterModule.forRoot(appRoutes, {
-			useHash: true
-		}),
+		RouterModule.forRoot(appRoutes, {}),
 	],
 	providers: [{provide: APP_BASE_HREF, useValue: '/app2/'}],
 	declarations: [
