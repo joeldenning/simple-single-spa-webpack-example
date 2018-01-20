@@ -49,12 +49,12 @@
 		</style>
 		<div class="navbar">
 			<ul>
-				<a href="#/app1">
+				<a onclick="routeToApp('/app1', event)" href="/app1">
 					<li>
 							App 1
 					</li>
 				</a>
-				<a href="#/app2">
+				<a onclick="routeToApp('/app2', event)" href="/app2">
 					<li>
 							App 2
 					</li>
@@ -62,4 +62,10 @@
 			</ul>
 		</div>
 	</body>
+	<script>
+		function routeToApp(url, evt) {
+			evt.preventDefault()
+			window.history.pushState(null, null, url);
+		}
+	</script>
 </html>
