@@ -6,7 +6,7 @@ singleSpa.declareChildApplication('app-2', () => import('../app2/app2.js'), path
 singleSpa.start();
 
 function pathPrefix(prefix) {
-	return function(location) {
-		return location.pathname.startsWith(`${prefix}`);
-	}
+  return function(location) {
+    return location.pathname.startsWith(`${prefix}`);
+  }
 }
