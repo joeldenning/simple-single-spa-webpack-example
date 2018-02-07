@@ -1,13 +1,13 @@
 {
-  presets: [
+  "presets": [
     ["env", {
       "targets": {
         "browsers": ["last 2 versions"]
       }
     }],
-    ["react"],
+    ["react"]
   ],
-  plugins: [
+  "plugins": [
     "syntax-dynamic-import",
-  ],
+  ]
 }

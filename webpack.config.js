@@ -28,8 +28,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js?$/,
         exclude: [path.resolve(__dirname, 'node_modules')],
         loader: 'babel-loader',
@@ -57,11 +56,10 @@ module.exports = {
     new ContextReplacementPlugin(
       /(.+)?angular(\\|\/)core(.+)?/,
       path.resolve(__dirname, '../src')
-      )
+    )
   ],
   devtool: 'source-map',
-  externals: [
-  ],
+  externals: [],
   devServer: {
     historyApiFallback: true
   }

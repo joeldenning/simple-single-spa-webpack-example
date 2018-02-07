@@ -1,9 +1,9 @@
 import 'zone.js';
 import 'reflect-metadata';
 import singleSpaAngular from 'single-spa-angular2';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import mainModule from './main-module.ts';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 const ngLifecycles = singleSpaAngular({
   domElementGetter,
@@ -18,7 +18,7 @@ export function bootstrap(props) {
 }
 
 export function mount(props) {
-  return ngLifecycles.mount(props).then(val => {debugger});
+  return ngLifecycles.mount(props).then(val => {});
 }
 
 export function unmount(props) {
