@@ -3767,17 +3767,20 @@ signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-single-spa-angular2@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/single-spa-angular2/-/single-spa-angular2-1.2.0.tgz#9287e8bb19f2b01297172e36e75001e66c0e8207"
+single-spa-angular@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/single-spa-angular/-/single-spa-angular-2.1.0.tgz#1a053981c95a091caa779ce7365cd4d962ef84cc"
+  integrity sha512-xCeLavw3gluKDYP4Qnnw6Ar9AT+0riulMuNpG2J+/MKA7bettQp0TLISYJVmDBMpc/EY5yfqXSO55pJh1FarIg==
 
-single-spa-react@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/single-spa-react/-/single-spa-react-2.2.0.tgz#bd9bc5595a6c7a71ead6ce0e420b9485ce764a63"
+single-spa-react@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/single-spa-react/-/single-spa-react-2.9.0.tgz#f0314a15f9c64e159b0fd0e889f0bde9c7d3ac5e"
+  integrity sha512-ifHjaS2lgXrty8N3rxVvUG7uc7X++gcDztQ9Xdmr/yuz2/dXHCKGjGU459Ly9P6ja9wBG74cit6amEuVevN5tA==
 
-single-spa@^3.5.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/single-spa/-/single-spa-3.8.0.tgz#305085d8be19ef4c0f6ad48f27f7be1cdf41c291"
+single-spa@^3.8.1:
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/single-spa/-/single-spa-3.9.1.tgz#82336b98dc121883d82760e1ae15380d575885b4"
+  integrity sha1-gjNrmNwSGIPYJ2DhrhU4DVdYhbQ=
 
 slash@^1.0.0:
   version "1.0.0"

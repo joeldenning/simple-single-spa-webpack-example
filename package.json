@@ -43,8 +43,8 @@
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.4.2",
     "single-spa": "^3.8.1",
-    "single-spa-angular2": "^1.2.0",
-    "single-spa-react": "^2.2.0",
+    "single-spa-angular": "^2.1.0",
+    "single-spa-react": "^2.9.0",
     "zone.js": "^0.8.16"
   }
 }
