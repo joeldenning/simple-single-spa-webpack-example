@@ -24,10 +24,11 @@
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.16",
     "http-server": "^0.10.0",
-    "ts-loader": "^2.3.2",
+    "ts-loader": "^5.3.3",
     "typescript": "^2.4.2",
-    "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.8.2"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
     "@angular/common": "^4.3.3",

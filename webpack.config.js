@@ -48,11 +48,13 @@ module.exports = {
       'node_modules',
     ],
   },
+  optimization: {
+    splitChunks: {
+      name: 'common-dependencies.js',
+    },
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'common-dependencies',
-    }),
     new ContextReplacementPlugin(
       /(.+)?angular(\\|\/)core(.+)?/,
       path.resolve(__dirname, '../src')
