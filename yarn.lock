@@ -4170,10 +4170,10 @@ signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-single-spa-angular@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/single-spa-angular/-/single-spa-angular-2.1.0.tgz#1a053981c95a091caa779ce7365cd4d962ef84cc"
-  integrity sha512-xCeLavw3gluKDYP4Qnnw6Ar9AT+0riulMuNpG2J+/MKA7bettQp0TLISYJVmDBMpc/EY5yfqXSO55pJh1FarIg==
+single-spa-angular@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/single-spa-angular/-/single-spa-angular-2.2.1.tgz#edf4c5cc377850e3a88677e3dce6ca41f8932425"
+  integrity sha512-+k/uur/MYPdrZsknmehcIzWwtNiUYLiayYcvNJ7iwUREgfP4nqbHAriED1MkC7oyHZIyTlbAsTJZFUTkSTqUFQ==
 
 single-spa-react@^2.9.0:
   version "2.9.0"
